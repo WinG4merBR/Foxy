@@ -267,6 +267,26 @@ const ValorantCommand = createCommand({
                 {
                     name: "Split",
                     value: "split",
+                },
+                {
+                    name: "Pearl",
+                    value: "pearl",
+                },
+                {
+                    name: "Glitch",
+                    value: "glitch",
+                },
+                {
+                    name: "Piazza",
+                    value: "piazza",
+                },
+                {
+                    name: "Lotus",
+                    value: "lotus",
+                },
+                {
+                    name: "Fracture",
+                    value: "fracture",
                 }]
             }]
         },
@@ -390,7 +410,7 @@ const ValorantCommand = createCommand({
             }
 
             case 'verify': {
-                ValorantVerifyExecutor(bot, context, endCommand, t);
+               new ValorantVerifyExecutor().execute(bot, context, endCommand, t);
                 break;
             }
         }
